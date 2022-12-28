@@ -13,6 +13,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
 
 		<style>
+			* {
+				/* box-sizing: border-box; */
+			}
+
 			.todo {
 				/* Don't worry about the first 3 properties. */
 				/* They're just used for demo purposes. */
@@ -26,6 +30,13 @@
 				padding-left: 32px;
 				padding-right: 32px;
 				width: 400px;
+
+				/* Standared Box Model */
+				box-sizing: content-box;
+			}
+
+			.todo.alternative {
+				box-sizing: border-box;
 			}
 		</style>
 	</head>

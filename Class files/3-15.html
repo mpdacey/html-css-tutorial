@@ -99,6 +99,46 @@
 			.hero img {
 				max-width: 100%;
 			}
+
+			.btn-mobile {
+				display: none;
+			}
+
+			@media screen and (max-width: 1050px) {
+				h1, h2 {
+					margin-bottom: 1rem;
+				}
+
+				h1 {
+					font-size: 2rem;
+				}
+
+				h2 {
+					font-size: 1.25rem;
+				}
+				
+				header {
+					margin-bottom: 4rem;
+				}
+				
+				header nav,
+				header .btn {
+					display: none;
+				}
+
+				header .btn-mobile{
+					display: inline-block;
+				}
+
+				.hero {
+					grid-template-columns: 1fr;		
+					gap: 4rem;			
+				}
+
+				.hero img {
+					order: -1;
+				}
+			}
 		</style>
 	</head>
 	<body class="flip">

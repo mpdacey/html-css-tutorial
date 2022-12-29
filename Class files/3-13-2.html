@@ -24,6 +24,7 @@
 
 			.learn {
 				padding: 8rem;
+				background-image: url('images/example/patterns.png');
 			}
 
 			.container {
@@ -62,6 +63,11 @@
 				white-space: nowrap;
 				padding-left: 2rem;
 				color: rgba(19, 42, 59, .80);
+				/* background-image: url('images/example/green-checkmark.svg');
+				background-repeat: no-repeat;
+				background-position: left center; */
+				/* Background short hand */
+				background: url('images/example/green-checkmark.svg') left center no-repeat
 			}
 
 			.btn {
@@ -70,7 +76,28 @@
 				color: white;
 				text-decoration: none;
 				border-radius: 4px;
+				/* background-color: rgb(130,112,250);
+				animation-name: btnHoverOff;
+				animation-duration: 0.3s;
+				animation-fill-mode: forwards; */
+				background-image: linear-gradient(45deg, rgb(130,112,250), rgb(242,60,95));
 			}
+
+			/* .btn:hover {
+				animation-name: btnHover;
+				animation-duration: 0.3s;
+				animation-fill-mode: forwards;
+			}
+
+			@keyframes btnHover {
+				from { background-color: rgb(130,112,250); }
+				to {background-color: rgb(242,60,95);}
+			}
+
+			@keyframes btnHoverOff {
+				from {background-color: rgb(242,60,95); }
+				to {background-color: rgb(130,112,250);}
+			} */
 		</style>
 	</head>
 	<body class="flip">

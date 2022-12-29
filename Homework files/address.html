@@ -13,15 +13,76 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 
 		<style>
-			/* Write your CSS here */
+			* {
+				box-sizing: border-box;
+			}
+
+			.learn{
+				background-color: #F7F8F8;
+				display: flex;
+				justify-content:center;
+				align-items: center;
+			}
+
+			.card {
+				font-family: 'Poppins', sans-serif;
+				color: #425562;
+				background-color: white;
+				font-size: 1.2rem;
+				width: 300px;
+				padding: 3rem;
+				border-radius: 8px;
+				box-sizing: content-box;
+				box-shadow: 0px 0.75rem 1rem #D7D8D8;
+			}
+
+			.card h1 {
+				font-weight: 900;
+				font-size: 2rem;
+				color: rgb(19,42,59);
+			}
+
+			.card p {
+				margin-bottom: 2rem;
+			}
+
+			.card label {
+				text-transform: uppercase;
+				font-size: 0.8em;
+				font-weight: 700;
+			}
+
+			.card a {
+				color: #F67320;
+				text-decoration: none;
+			}
 		</style>
 	</head>
 	<body>
 		<section class="learn">
 			<!-- Practice area start -->
+			<div class="card">
+				<img src="images/address/envelopes-bulk.svg">
 
-			<!-- Write your HTML here -->
+				<h1>Let's get in touch</h1>
 
+				<p>
+					9 Augusta Street<br>
+					Fair Lawn, NJ 07410
+				</p>
+
+				<hr>
+
+				<p>
+					<label for="email">Email</label><br>
+					<a id="email" href="mailto:chuck@roundhouse.com">chuck@roundhouse.com</a>
+				</p>
+
+				<p>
+					<label for="phone">Phone</label><br>
+					<a id="phone" href="tel:12025550125">+1-202-555-0125</a>
+				</p>
+			</div>
 			<!-- Practice area end -->
 		</section>
 

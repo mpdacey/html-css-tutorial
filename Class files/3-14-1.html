@@ -26,6 +26,38 @@
 				border: 1px dashed #EA4C89;
 			}
 
+			.flex {
+				display: flex;
+				/* Horizontal Axis */
+				justify-content: start;
+				justify-content: center;
+				/* justify-content: end;
+				justify-content: space-around;
+				justify-content: space-between;
+				justify-content: space-evenly; */
+				/* Vertical Axis */
+				align-items: flex-start;
+				align-items: center;
+				align-items: flex-end;
+				/* Adds gap between flex items */
+				gap: 2rem;
+
+				/* Column swaps axises for above commands */
+				/* flex-direction: column; */
+			}
+
+			.grid {
+				display: grid;
+				/* grid-template-columns: 200px 300px 100px; */
+				/* fr = fraction of available space */
+				grid-template-columns: 1fr 2fr;
+				grid-template-rows: 500px, 1000px;
+				/* Adds gap between grid items */
+				gap: 1rem;
+
+
+			}
+
 			.card {
 				color: rgba(0, 0, 0, 0.6);
 				padding: 2rem;
@@ -48,7 +80,6 @@
 
 			.style-4 {
 				background-color: #23dc8f;
-				height: 5rem;
 			}
 		</style>
 	</head>

@@ -13,16 +13,144 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 
 		<style>
-			/* Write your CSS here */
+			* {
+				box-sizing: border-box;
+			}
+
+			.learn{
+				background-color: #F7F8F8;
+				display: flex;
+				justify-content:center;
+				align-items: center;
+			}
+
+			.card {
+				font-family: 'Poppins', sans-serif;
+				color: #2B2629;
+				background-color: white;
+				width: 600px;
+				border-radius: 8px;
+				padding: 3rem;
+				padding-right: 1px;
+				box-sizing: content-box;
+				box-shadow: 0px 0.75rem 1rem #D7D8D8;
+			}
+
+			.character {
+				border-radius: 1.5rem;
+				font-size: 0.95rem;
+				width: 561px;
+				height: 297px;
+				background-size: 100%;
+				margin: 0;
+				margin-bottom: 3rem;
+			}
+
+			.character:hover {
+				background-size: 105%;
+				background-position: -5px -9px;
+				cursor: pointer;
+			}
+
+			.character div {
+				position: relative;
+				display: inline-block;
+				top: 25%;
+				left: 48%;
+			}
+
+			.character p, h1, h3 {
+				margin: 0;
+				margin-bottom: .5rem;
+			}
+
+			.character h2 {
+				font-size: 1.5em;
+				font-weight: 900;
+			}
+
+			.character h3 {
+				font-weight: 700;
+			}
+
+			.character p {
+				font-size: .9em;
+			}
+
+			.character ul {
+				list-style-type: none;
+				list-style-position: outside;
+				padding: 0;
+				margin: 0;
+			}
+
+			.character ul li {
+				display: inline-block;
+				margin-right: 1.5rem;
+			}
+
+			.viking {
+				background-image: url('images/characters/bg-elephant.jpg');
+			}
+
+			.sorceress {
+				background-image: url('images/characters/bg-cat.jpg');
+			}
+
+			.fashion {
+				background-image: url('images/characters/bg-bunny.jpg');
+			}
 		</style>
 	</head>
 	<body>
 		<section class="learn">
-			<!-- Practice area start -->
-
-			<!-- Write your HTML here -->
-
-			<!-- Practice area end -->
+			<div class="card">
+				<div class="viking character">
+					<div>
+						<h2>The Viking</h2>
+						<ul>
+							<li>
+								<h3>68%</h3>
+								<p>Win Rate</p>
+							</li>
+							<li>
+								<h3>522</h3>
+								<p>Games Played</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sorceress character">
+					<div>
+						<h2>The Sourceress</h2>
+						<ul>
+							<li>
+								<h3>97%</h3>
+								<p>Win Rate</p>
+							</li>
+							<li>
+								<h3>1922</h3>
+								<p>Games Played</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="fashion character">
+					<div>
+						<h2>The Fashionista</h2>
+						<ul>
+							<li>
+								<h3>24%</h3>
+								<p>Win Rate</p>
+							</li>
+							<li>
+								<h3>124</h3>
+								<p>Games Played</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="preview" data-content="Characters">

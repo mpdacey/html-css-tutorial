@@ -13,16 +13,111 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 
 		<style>
-			/* Write your CSS here */
+			* {
+				box-sizing: border-box;
+			}
+
+			.learn{
+				background-color: #F7F8F8;
+				display: flex;
+				justify-content:center;
+				align-items: center;
+			}
+
+			.card {
+				font-family: 'Poppins', sans-serif;
+				color: #2B2629;
+				background-color: white;
+				width: 400px;
+				border-radius: 8px;
+				padding: 3rem;
+				box-sizing: content-box;
+				box-shadow: 0px 0.75rem 1rem #D7D8D8;
+			}
+
+			.card form>div{
+				margin-bottom: 2rem;
+			}
+
+			.card h1 {
+				font-weight: 900;
+				font-size: 2rem;
+			}
+
+			.card label {
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-weight: 700;
+				font-size: 0.9rem;
+				line-height: 2rem;
+			}
+
+			.card input, .card select, .card textarea {
+				background-color: #F3F4F5;
+				border-radius: .5rem;
+				border-style: none;
+				padding: 1rem;
+				font-size: 1.15rem;
+				color: #405260;
+				width: 100%;
+			}
+
+			.card select,
+			.card option,
+			.card textarea,
+			.card input::placeholder {
+				font-family: 'Poppins', sans-serif;
+			}
+
+			.card select{
+				appearance: none;
+				background-image: url('images/contact-form/arrow-down.svg');
+				background-repeat: no-repeat;
+				background-position: 95%;
+			}
+
+			.card input[type="submit"] {
+				background-color: #3589D2;
+				color:white;
+				font-weight: 700;
+				line-height: 3rem;
+			}
+
+			.card input[type="submit"]:hover,
+			.card input[type="submit"]:focus	{
+				background-color: #4a93f1;
+			}
 		</style>
 	</head>
 	<body>
 		<section class="learn">
-			<!-- Practice area start -->
-
-			<!-- Write your HTML here -->
-
-			<!-- Practice area end -->
+			<div class="card">
+				<img src="images/contact-form/envelope.svg">
+				<h1>Let's get in touch</h1>
+				<form action="#">
+					<div>
+						<label for="name">Name</label>
+						<input id="name" type="text" placeholder="Chuck Norris">
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input id="email" type="email" placeholder="chuck@roundhouse.com">
+					</div>
+					<div>
+						<label for="department">Department</label>
+						<select id="department">
+							<option value="Sydney">Sydney</option>
+							<option value="Melbourne">Melbourne</option>
+							<option value="Brisbane">Brisbane</option>
+						</select>
+					</div>
+					<div>
+						<label for="message">Message</label>
+						<textarea name="message" id="" cols="40" rows="8"></textarea>
+					</div>
+					<input type="submit" value="Send Message">
+				</form>
+			</div>
 		</section>
 
 		<section class="preview" data-content="Contact form">
